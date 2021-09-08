@@ -6,7 +6,9 @@ namespace Modul2HW1
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var start = new Starter();
+            start.Run();
+            Console.ReadKey();
         }
     }
 }
