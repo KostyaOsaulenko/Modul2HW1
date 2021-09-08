@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,6 +40,8 @@ namespace Modul2HW1
                     _logge.Print(LogTypes.Error, message);
                 }
             }
+
+            File.WriteAllText("log.txt", _logge.ReturnValueToFile().ToString());
         }
     }
 }
